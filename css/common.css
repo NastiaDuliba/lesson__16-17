@@ -1,0 +1,55 @@
+.button {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  padding: 15px 40px;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+}
+.button span {
+  position: relative;
+  z-index: 4;
+}
+.button:hover::before {
+  opacity: 1;
+}
+.button::before {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  content: "";
+  background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+  border-radius: 4px;
+  padding: 15px 40px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.button:hover {
+}
+.button--border:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.button--border {
+  background: transparent;
+  border: 1px solid #f75e05;
+  color: #ff3f3a;
+}
+.form__line {
+}
+.form__line--button {
+}
+.form__button {
+  display: flex;
+}
+
+.button {
+}
