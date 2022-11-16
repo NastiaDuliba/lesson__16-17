@@ -853,15 +853,34 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .cards-block__column {
+    flex-direction: column;
+    padding: 20px;
+    flex: 1 0 100%;
+    display: flex;
+  }
+  .cards-block__item {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+  }
   .cards-block__img {
-    flex: 0 1 45.788%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 100%;
   }
 
-  .title-block__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.3;
-    color: #1e212c;
-    margin: 0 0 40px 0;
+  .cards-block__img img {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+    object-fit: contain;
+    object-position: top;
   }
 }
+
+
